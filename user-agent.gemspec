@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email = %q{tj@vision-media.ca}
   s.extra_rdoc_files = ["README.rdoc", "lib/user-agent.rb", "lib/user-agent/agent.rb", "lib/user-agent/version.rb", "tasks/docs.rake", "tasks/gemspec.rake", "tasks/spec.rake"]
   s.files = ["History.rdoc", "Manifest", "README.rdoc", "Rakefile", "lib/user-agent.rb", "lib/user-agent/agent.rb", "lib/user-agent/version.rb", "spec/agent_spec.rb", "spec/agents_spec.rb", "spec/spec.opts", "spec/spec_helper.rb", "tasks/docs.rake", "tasks/gemspec.rake", "tasks/spec.rake", "user-agent.gemspec"]
-  s.homepage = %q{}
+  s.homepage = %q{http://github.com/visionmedia/user-agent}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "User-agent", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{user-agent}

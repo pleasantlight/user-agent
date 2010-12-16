@@ -9,6 +9,7 @@ Echoe.new "user-agent", Agent::VERSION do |p|
   p.author = "TJ Holowaychuk"
   p.email = "tj@vision-media.ca"
   p.summary = "User agent parser"
+  p.url = "http://github.com/visionmedia/user-agent"
   p.runtime_dependencies = []
 end
 
