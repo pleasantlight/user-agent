@@ -89,7 +89,7 @@ class Agent
   
   def self.version_for_user_agent string
     case name = name_for_user_agent(string)
-    when :'Internet Explorer' ; $1 if string =~ /msie[\/ ]([\d\w\.\-]+)/i
+    when :"Internet Explorer" ; $1 if string =~ /msie[\/ ]([\d\w\.\-]+)/i
     when :Chrome ; $1 if string =~ /chrome\/([\d\w\.\-]+)/i
     when :Safari ; $1 if string =~ /version\/([\d\w\.\-]+)/i
     when :PS3    ; $1 if string =~ /([\d\w\.\-]+)\)\s*$/i
@@ -123,20 +123,20 @@ class Agent
     when /ipad/i                 ; :iOS
     when /android/i              ; :Android
     when /webos/i                ; :webOS
-    when /symbianos/i            ; :'Symbian OS'
-    when /windows phone os/i     ; :'Windows Phone'
+    when /symbianos/i            ; :"Symbian OS"
+    when /windows phone os/i     ; :"Windows Phone"
     when /wii/i                  ; :Wii
     when /playstation 3/i        ; :Playstation
     when /playstation portable/i ; :Playstation
     when /windows/i              ; :Windows
-    when /os x/i                 ; :'Mac OS X'
+    when /os x/i                 ; :"Mac OS X"
     when /linux/i                ; :Linux
     else                         ; :Unknown
-    # when /windows nt 6\.0/i      ; :'Windows Vista'
-    # when /windows nt 6\.\d+/i    ; :'Windows 7'
-    # when /windows nt 5\.2/i      ; :'Windows 2003'
-    # when /windows nt 5\.1/i      ; :'Windows XP'
-    # when /windows nt 5\.0/i      ; :'Windows 2000'
+    # when /windows nt 6\.0/i      ; :"Windows Vista"
+    # when /windows nt 6\.\d+/i    ; :"Windows 7"
+    # when /windows nt 5\.2/i      ; :"Windows 2003"
+    # when /windows nt 5\.1/i      ; :"Windows XP"
+    # when /windows nt 5\.0/i      ; :"Windows 2000"
     # when /os x (\d+)[._](\d+)/i  ; :"OS X #{$1}.#{$2}"
     end
   end
@@ -149,7 +149,7 @@ class Agent
     when /konqueror/i            ; :Konqueror
     when /chrome/i               ; :Chrome
     when /safari/i               ; :Safari
-    when /msie/i                 ; :'Internet Explorer'
+    when /msie/i                 ; :"Internet Explorer"
     when /opera/i                ; :Opera
     when /playstation 3/i        ; :PS3
     when /playstation portable/i ; :PSP
